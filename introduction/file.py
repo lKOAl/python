@@ -4,8 +4,8 @@ num2 = 2.3 # number
 boolean = True # Booleans
 string = 'Hello World' # String
 pizza_toppings = ['Pepperoni', 'Sausage', 'Jalepenos', 'Cheese', 'Olives'] #list
-person = {'name': 'John', 'location': 'Salt Lake', 'age': 37, 'is_balding': False} #
-fruit = ('blueberry', 'strawberry', 'banana')
+person = {'name': 'John', 'location': 'Salt Lake', 'age': 37, 'is_balding': False} #list, 
+fruit = ('blueberry', 'strawberry', 'banana') #list
 print(type(fruit))
 print(pizza_toppings[1])
 pizza_toppings.append('Mushrooms') #list change value
@@ -26,7 +26,9 @@ elif len(string) > 15:
     print("It's a long word!")
 else:
     print("Just right!")
+# end of conditonal
 
+#for loop start
 for x in range(5):
     print(x)
 for x in range(2,5):
@@ -34,23 +36,23 @@ for x in range(2,5):
 for x in range(2,10,3):
     print(x)
 x = 0
-while(x < 5):
+while(x < 5): #while loop start
     print(x)
     x += 1
-
+#while loop stop
 pizza_toppings.pop()
 pizza_toppings.pop(1)
 
 print(person)
-person.pop('eye_color')
+person.pop('eye_color') #delete value of eyes color from list
 print(person)
 
 for topping in pizza_toppings:
-    if topping == 'Pepperoni':
+    if topping == 'Pepperoni': #statement was true and went to line 53
         continue
     print('After 1st if statement')
-    if topping == 'Olives':
-        break
+    if topping == 'Olives':#statement was false 
+        break #break and print 'After 1st if statement'
 
 def print_hello_ten_times():
     for num in range(10):
